@@ -1,0 +1,17 @@
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\bin\Debug\Jewelry.exe.config
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\bin\Debug\Jewelry.exe
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\bin\Debug\Jewelry.pdb
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.csprojResolveAssemblyReference.cache
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.Form1.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmBill.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmColor.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmCompany.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmProduct.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmSize.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmType.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.Properties.Resources.resources
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.csproj.GenerateResource.Cache
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.csproj.CoreCompileInputs.cache
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.exe
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.pdb
+D:\GitHub\GitTest1\Project2\Jewelry\Jewelry\obj\Debug\Jewelry.frmDetail_Bill.resources
