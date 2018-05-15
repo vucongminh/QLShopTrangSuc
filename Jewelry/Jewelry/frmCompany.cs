@@ -42,6 +42,7 @@ namespace Jewelry
         private void listView1_ItemActivate(object sender, EventArgs e)
         {
             int row = this.listView1.SelectedItems[0].Index;
+            temp = this.listView1.Items[row].SubItems[1].Text;
             txtMa.Text = this.listView1.Items[row].SubItems[1].Text;
             txtTen.Text = this.listView1.Items[row].SubItems[2].Text;
         }
