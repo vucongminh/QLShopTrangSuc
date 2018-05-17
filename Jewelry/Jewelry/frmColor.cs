@@ -49,7 +49,7 @@ namespace Jewelry
                     string[] name = { "@name" };
                     string[] value = { txtName.Text };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("ADD_Color", name, value, 1);
+                    sql.update("ADD_Color", name, value, 1);
                     MessageBox.Show("THÊM COLOR THÀNH CÔNG !", "");
 
                     LoadListView1();
@@ -73,9 +73,9 @@ namespace Jewelry
                 if (result == DialogResult.Yes)
                 {
                     string[] name = { "@id", "@name" };
-                    string[] value = { Color_id.ToString(), txtName.Text};
+                    string[] value = { Color_id.ToString(), txtName.Text };
                     sqlQuery truyVan = new sqlQuery();
-                    truyVan.add("UPDATE_Color", name, value, 2);
+                    truyVan.update("UPDATE_Color", name, value, 2);
                     MessageBox.Show("Cập nhật thành công");
                     listView1.Items.Clear();
                     LoadListView1();
@@ -102,7 +102,7 @@ namespace Jewelry
                     string[] name = { "@id" };
                     string[] value = { Color_id.ToString() };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("DELETE_Color", name, value, 1);
+                    sql.update("DELETE_Color", name, value, 1);
                     MessageBox.Show("Xóa thành công .");
                     listView1.Items.Clear();
                     LoadListView1();

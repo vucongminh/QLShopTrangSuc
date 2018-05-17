@@ -49,7 +49,7 @@ namespace Jewelry
                     string[] name = { "@name" };
                     string[] value = { txtName.Text };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("ADD_Size", name, value, 1);
+                    sql.update("ADD_Size", name, value, 1);
                     MessageBox.Show("THÊM SIZE THÀNH CÔNG !", "");
 
                     LoadListView1();
@@ -75,7 +75,7 @@ namespace Jewelry
                     string[] name = { "@id", "@name" };
                     string[] value = { Size_id.ToString(), txtName.Text };
                     sqlQuery truyVan = new sqlQuery();
-                    truyVan.add("UPDATE_Size", name, value, 2);
+                    truyVan.update("UPDATE_Size", name, value, 2);
                     MessageBox.Show("Cập nhật thành công");
                     listView1.Items.Clear();
                     LoadListView1();
@@ -102,7 +102,7 @@ namespace Jewelry
                     string[] name = { "@id" };
                     string[] value = { Size_id.ToString() };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("DELETE_Size", name, value, 1);
+                    sql.update("DELETE_Size", name, value, 1);
                     MessageBox.Show("Xóa thành công .");
                     listView1.Items.Clear();
                     LoadListView1();

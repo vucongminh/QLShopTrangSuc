@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -35,8 +36,18 @@
             this.quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.companyName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.typeName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(770, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(275, 51);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Product thuộc";
             // 
             // listView1
             // 
@@ -53,12 +64,12 @@
             this.listView1.GridLines = true;
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(10, 107);
+            this.listView1.Location = new System.Drawing.Point(-1, 88);
             this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1789, 360);
-            this.listView1.TabIndex = 28;
+            this.listView1.TabIndex = 20;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
@@ -96,26 +107,14 @@
             this.typeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.typeName.Width = 180;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(600, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 51);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "NHUNG PRODUCT CO SIZE";
-            // 
             // frmSizeProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1808, 488);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(1786, 454);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.listView1);
             this.Name = "frmSizeProduct";
             this.Text = "frmSizeProduct";
             this.Load += new System.EventHandler(this.frmSizeProduct_Load);
@@ -126,6 +125,7 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader name;
@@ -133,6 +133,5 @@
         private System.Windows.Forms.ColumnHeader quantity;
         private System.Windows.Forms.ColumnHeader companyName;
         private System.Windows.Forms.ColumnHeader typeName;
-        private System.Windows.Forms.Label label1;
     }
 }

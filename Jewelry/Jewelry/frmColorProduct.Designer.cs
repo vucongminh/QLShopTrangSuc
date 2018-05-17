@@ -43,11 +43,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(595, 9);
+            this.label1.Location = new System.Drawing.Point(770, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 51);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "NHUNG PRODUCT CO COLOR";
+            this.label1.Size = new System.Drawing.Size(275, 51);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Product thuộc";
             // 
             // listView1
             // 
@@ -64,15 +64,14 @@
             this.listView1.GridLines = true;
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(5, 95);
+            this.listView1.Location = new System.Drawing.Point(-1, 88);
             this.listView1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1789, 360);
-            this.listView1.TabIndex = 26;
+            this.listView1.TabIndex = 18;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -113,10 +112,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1808, 488);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(1786, 454);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.listView1);
             this.Name = "frmColorProduct";
             this.Text = "frmColorProduct";
             this.Load += new System.EventHandler(this.frmColorProduct_Load);

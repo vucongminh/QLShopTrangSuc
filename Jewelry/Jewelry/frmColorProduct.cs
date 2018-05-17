@@ -18,17 +18,12 @@ namespace Jewelry
             InitializeComponent();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmColorProduct_Load(object sender, EventArgs e)
         {
             listView1.Items.Clear();
             sqlQuery sql = new sqlQuery();
             DataTable dt = sql.LayDuLieu("Select name, price, quantity, companyName, typeName from product where id in (" +
-                "select idProduct from detail_color where idColor = "+frmColor.Color_id+")");
+                "select idProduct from detail_color where idColor = " + frmColor.Color_id + ")");
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 ListViewItem item = new ListViewItem((i + 1).ToString());

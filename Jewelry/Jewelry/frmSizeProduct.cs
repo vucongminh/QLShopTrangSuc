@@ -19,7 +19,7 @@ namespace Jewelry
         }
 
         private void frmSizeProduct_Load(object sender, EventArgs e)
-        {
+        { 
             listView1.Items.Clear();
             sqlQuery sql = new sqlQuery();
             DataTable dt = sql.LayDuLieu("Select name, price, quantity, companyName, typeName from product where id in (" +

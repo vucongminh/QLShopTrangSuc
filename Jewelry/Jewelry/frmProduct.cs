@@ -101,7 +101,7 @@ namespace Jewelry
                     string[] name = { "@name", "@price", "@quantity", "@idType", "@idCompany" };
                     string[] value = { txtName.Text, txtPrice.Text, txtQuantity.Text, idTyp.ToString(), idCom.ToString() };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("ADD_Product", name, value, 5);
+                    sql.update("ADD_Product", name, value, 5);
                     MessageBox.Show("THÊM Product THÀNH CÔNG !", "");
 
                     LoadListView1();
@@ -152,12 +152,12 @@ namespace Jewelry
                         idPro = row["id"];
                     }
 
-                 
+
 
                     string[] name = { "@id", "@name", "@price", "@quantity", "@idType", "@idCompany" };
-                    string[] value = { idPro.ToString(), txtName.Text ,txtPrice.Text, txtQuantity.Text, idTyp.ToString(), idCom.ToString() };
-
-                    truyVan.update("UPDATE_Product", name, value, 6);
+                    string[] value = { idPro.ToString(), txtName.Text, txtPrice.Text, txtQuantity.Text, idTyp.ToString(), idCom.ToString() };
+                    sqlQuery sql = new sqlQuery();
+                    sql.update("UPDATE_Product", name, value, 6);
                     MessageBox.Show("Cập nhật thành công");
                     listView1.Items.Clear();
                     LoadListView1();
@@ -186,12 +186,12 @@ namespace Jewelry
                     {
                         idPro = row["id"];
                     }
-                    
+
 
                     string[] name = { "@id" };
                     string[] value = { idPro.ToString() };
                     sqlQuery sql = new sqlQuery();
-                    sql.add("DELETE_Product", name, value, 1);
+                    sql.update("DELETE_Product", name, value, 1);
                     MessageBox.Show("Xóa thành công .");
                     listView1.Items.Clear();
                     LoadListView1();
@@ -243,7 +243,7 @@ namespace Jewelry
         {
             String search = txtSearch.Text.Trim();
 
-            if(search != "")
+            if (search != "")
             {
                 listView1.Items.Clear();
                 sqlQuery sql = new sqlQuery();
@@ -264,7 +264,7 @@ namespace Jewelry
             {
                 LoadListView1();
             }
-            
+
         }
     }
 }
