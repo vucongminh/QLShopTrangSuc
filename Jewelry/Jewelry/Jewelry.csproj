@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.13, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -69,6 +70,12 @@
     <Compile Include="frmColor.Designer.cs">
       <DependentUpon>frmColor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmColorProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColorProduct.Designer.cs">
+      <DependentUpon>frmColorProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +100,12 @@
     <Compile Include="frmSize.Designer.cs">
       <DependentUpon>frmSize.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSizeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSizeProduct.Designer.cs">
+      <DependentUpon>frmSizeProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +124,9 @@
     <EmbeddedResource Include="frmColor.resx">
       <DependentUpon>frmColor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmColorProduct.resx">
+      <DependentUpon>frmColorProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCompany.resx">
       <DependentUpon>frmCompany.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +139,9 @@
     <EmbeddedResource Include="frmSize.resx">
       <DependentUpon>frmSize.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSizeProduct.resx">
+      <DependentUpon>frmSizeProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmType.resx">
       <DependentUpon>frmType.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +153,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -147,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\icons8-necklace-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
